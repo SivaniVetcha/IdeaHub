@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './contexts/AuthContext';
@@ -11,8 +11,18 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Hackathons } from './pages/Hackathons';
 import { Archive } from './pages/Archive';
+import { EasterEggModal } from './components/EasterEggModal';
+import Konami from 'konami-code-js';
 
 function App() {
+  const [showEgg, setShowEgg] = useState(false);
+
+  useEffect(() => {
+    new Konami(() => {
+      setShowEgg(true);
+    });
+  }, []);
+
   return (
     <AuthProvider>
       <Router>
@@ -28,7 +38,10 @@ function App() {
             <Route path="/register" element={<Register />} />
           </Routes>
         </Layout>
-        <Toaster 
+
+        {showEgg && <EasterEggModal onClose={() => setShowEgg(false)} />}
+
+        <Toaster
           position="top-right"
           toastOptions={{
             duration: 4000,
