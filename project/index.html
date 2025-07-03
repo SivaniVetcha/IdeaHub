@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IdeaHub - Connect, Create, Collaborate</title>
+    <meta name="description" content="Modern platform for college students across India to post project ideas, find teammates, and build together." />
+    <style>
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  <!-- Firebase SDK -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAs7RVQD26V1hmCjkZDTy3F5lWuRpY3Kig",
+  authDomain: "ideahub-2c12c.firebaseapp.com",
+  projectId: "ideahub-2c12c",
+  storageBucket: "ideahub-2c12c.firebasestorage.app",
+  messagingSenderId: "173796858979",
+  appId: "1:173796858979:web:a4c3851f8e1b065aef6c56"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+</script>
+</html>
