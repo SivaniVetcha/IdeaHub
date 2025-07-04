@@ -55,8 +55,8 @@ While the initial version is free for all users, future versions of IdeaHub coul
 
 ## 👨‍👩‍👧 Team
 
-- **Amrutha Pallapothu** – Frontend Development, UI Integration  
-- **Sivani Vletchu** – Firebase Integration, Deployment  
+- **Gnanamrutha Pallapothu** – Frontend Development, UI Integration  
+- **Sivani Vetchu** – Firebase Integration, Deployment  
 - **Sai Sriya Tallam** – UX Design, Testing  
 
 ---
