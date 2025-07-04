@@ -18,7 +18,8 @@
     "react-confetti": "^6.4.0",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "konami-code-js": "^1.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
