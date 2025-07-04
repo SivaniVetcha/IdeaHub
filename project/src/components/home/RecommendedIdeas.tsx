@@ -11,8 +11,8 @@ const demoIdeas = [
     id: 1,
     title: "AI-Powered Exam Evaluator",
     description: "Intelligent system that automatically evaluates and grades exam papers using advanced NLP and machine learning algorithms, providing detailed feedback to students.",
-    author: "pallapothu.2024@vitstudent.ac.in",
-    authorName: "Pallapothu Student",
+   // author: "pallapothu.2024@vitstudent.ac.in",
+    authorName: "Pallapothu Amrutha",
     skills: ["AI", "NLP", "Python", "Machine Learning"],
     likes: 89,
     teamSize: 2,
@@ -25,7 +25,7 @@ const demoIdeas = [
     id: 2,
     title: "Mental Health Tracker App",
     description: "Comprehensive mobile application that helps students track their mental health, provides mood analysis, and connects them with counseling resources.",
-    author: "vetcha.sivani2024@vitstudent.ac.in",
+    //author: "vetcha.sivani2024@vitstudent.ac.in",
     authorName: "Vetcha Sivani",
     skills: ["Flutter", "UX Design", "Psychology", "Mobile Dev"],
     likes: 67,
@@ -39,7 +39,7 @@ const demoIdeas = [
     id: 3,
     title: "Blockchain Voting Portal",
     description: "Secure and transparent voting system built on blockchain technology for student elections and organizational decision-making processes.",
-    author: "tallam.saisriya2024@vitstudent.ac.in",
+    //author: "tallam.saisriya2024@vitstudent.ac.in",
     authorName: "Tallam Sai Sriya",
     skills: ["Blockchain", "Web3", "Solidity", "React"],
     likes: 124,
@@ -136,7 +136,6 @@ export const RecommendedIdeas: React.FC = () => {
                     </div>
                     <div className="ml-3">
                       <div className="text-sm font-medium text-gray-900">{idea.authorName}</div>
-                      <div className="text-xs text-gray-500">{idea.author}</div>
                     </div>
                   </div>
 
@@ -172,7 +171,7 @@ export const RecommendedIdeas: React.FC = () => {
                     <Button 
                       className="flex-1" 
                       size="sm"
-                      onClick={() => handleConnect(idea.author, idea.title)}
+                      onClick={() => handleConnect(idea.authorName, idea.title)}
                     >
                       <Mail className="w-4 h-4 mr-1" />
                       Connect

@@ -266,7 +266,6 @@ export const Explore: React.FC = () => {
                     </div>
                     <div className="ml-3">
                       <div className="text-sm font-medium text-gray-900">{idea.authorName}</div>
-                      <div className="text-xs text-gray-500">{idea.author}</div>
                     </div>
                   </div>
 
@@ -302,7 +301,7 @@ export const Explore: React.FC = () => {
                     <Button 
                       className="flex-1" 
                       size="sm"
-                      onClick={() => handleConnect(idea.author, idea.title)}
+                      onClick={() => handleConnect(idea.authorName, idea.title)}
                     >
                       <Mail className="w-4 h-4 mr-1" />
                       Connect
